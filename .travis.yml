@@ -27,7 +27,7 @@ after_script:
   - git config user.email "843467935@qq.com"
   - git add .
   - git commit -m "Update docs"
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" resource:master
+  - git push --force --quiet "https://xuejinhui:${GH_TOKEN}@${GH_REF}" resource:master
 # E: Build LifeCycle
 
 
@@ -37,5 +37,5 @@ branches:
 
 env:
   global:
-    - GH_REF: github.com:xuejinhui/xuejinhui.github.io.git
+    - GH_REF: github.com/xuejinhui/xuejinhui.github.io.git
     - secure: "wggw/FZvE45sknsBrCo3lzoX+r5LqBBsnFeQRYdfFUcYqmLqhRdDl96GJO5ymCR02FjtYJM0I6jxWZWwSOtkphnX6gNSIBycKd03d1By0+g0B/0J4yVCmBBqZiCt4iMpWbf5+9wiQG6fYFZPLfgCQPkOAD2ehwVd2dXutxo73qCu0rOfkmBk6Od1n3kvoY78a3pUO1kFxwmbtzmgubbcB4imv6frEyetikk/YCrPFEN46wKFLJ1a7Ahlt5OrawIC3bI5Vcrg1+Wl5lC9rmlESAhoTczr9qFVlUfdiUZE97KdpQBpypdnsCn2V4y7TyDfjGEDukXbrDYf2t+KOItaDwyv5b+1YCPDxWaPe/lU5fTyzFnkIgAiMbmzmoWoQpZYlC57G1+kQDBALBbMJf3m2P3QTghK4rIotDbI2dKP9LwouEtAGin2MRtLRE4dq2KLIZsSc8xJnOkmUC9l0vREpOet/65zWZ4Z8iExl1TT/lNuXjjLQrlIWhvzZ1+AGasKYjoFtaknowr9Km/bT1pe/8lZaZxJFukjAnDSt+K7jn3aNO8K1/+RSxUH1ZQ6QhE98xMvkmRncsnkjk2U2CuwV6T6Hn6Pe6eBzP6Q2IxbRtw+8NBG3doeKXIEjGBunxy0h7vuIOZz58CUKcnN3TTRUqg7ALjMyo6rtWArIKoxHoU="
