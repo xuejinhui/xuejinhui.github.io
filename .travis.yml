@@ -27,7 +27,7 @@ after_script:
   - git config user.email "843467935@qq.com"
   - git add .
   - git commit -m "Update docs"
-  - git push --force --quiet "https://xuejinhui:${GH_TOKEN}@${GH_REF}" resource:master
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" resource:master
 # E: Build LifeCycle
 
 
