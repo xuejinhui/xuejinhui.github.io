@@ -3,15 +3,15 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Your Title
-subtitle: This is hexo theme
+title: Kanfi Xue
+subtitle: Beyond the pots and pans, there should be poetry and the far afield.
 author: Kanfi Xue
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite-url       # Note: don't forget to modify the CNAME file to your url
+url: https://xuejinhui.github.io       # Note: don't forget to modify the CNAME file to your url
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -20,7 +20,7 @@ permalink_defaults:
 
 # Site settings
 SEOTitle:
-email: beantech@gmail.com
+email: KanfiXue@gmail.com
 description: ""
 keyword: ""
 header-img: img/header_img/home-bg-2-dark.png
@@ -30,24 +30,24 @@ signature-img: img/signature/BeanTechSign-white.png
 
 # SNS settings
 # RSS: false
-# weibo_username:     Demonbaneen
+weibo_username:     xuejinhui
 # zhihu_username:     Demonbane
-github_username:    YenYuHsuan
+github_username:    xuejinhui
 # twitter_username:   Demonbane_x
-facebook_username:  YenYuHsuan
-linkedin_username:  yu-hsuan-yen
+facebook_username:  KanfiXue
+#linkedin_username:  KanfiXue
 
 # Build settings
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 
 # Disqus settings
-disqus_username: your-disqus-ID
+# disqus_username: your-disqus-ID
 
 # Duoshuo settings
 # duoshuo_username: kaijun
 # Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+# duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
 
 # Analytics settings
@@ -60,8 +60,8 @@ ga_domain: yoursite
 
 # Sidebar settings
 sidebar: true                       # whether or not using Sidebar.
-sidebar-about-description: "Hi, i'm Kanfi Xue"
-sidebar-avatar: img/ironman-draw.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "Hi, I'm Kanfi Xue"
+sidebar-avatar: img/avater.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 widgets:
 - featured-tags
 - short-about
