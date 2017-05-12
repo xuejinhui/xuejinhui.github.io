@@ -3,7 +3,7 @@ title: "Hexo And Travis Install"
 catalog: true
 date: 2017-05-09 10:23:13
 subtitle: "Install hexo and auto publish with Travis"
-header-img: 
+header-img: "install-improve-header.png"
 tags:
 - Hexo
 - Travis
@@ -11,28 +11,35 @@ tags:
 catagories:
 - Hexo
 ---
-#Install hexo and auto publish with travis 
+# Install hexo and auto publish with travis
+---
 This page will tell you how to install Hexo and auto publish your blog with travis that is a publish tool.So you can publish your blog only git push your hexo program.
-##Hexo Installation 
-###Requirements
+## Hexo Installation
+---
+### Requirements
+---
 Before installing Hexo,you do need to intall a couple of other things:
 * [Node.js](https://nodejs.org)
 * [Git](https://git-scm.com/)
-###Install
+### Install
+---
 ```bash
 $ npm install -g hexo-cli
 ```
 And now you have finished the installation of Hexo.<br>
 <font color="#A9A9A9">Tip:Remmenber put all bin path above into environment variables on your opreration system.</font>
-##Hexo Init
-###Init
+## Hexo Init
+---
+### Init
+---
 Once Hexo is intalled,run the following commands to init Hexo.
 ```bash
 $ hexo init <folder>
 $ cd <folder>
 $ npm install
 ```
-###Modify
+### Modify
+---
 Modify `_config.yml` file with your own info.<br>
 * Site
 ```yml
@@ -51,7 +58,8 @@ deploy:
   branch: <your-branch>
 ```
 
-##Hexo Basics
+## Hexo Basics
+---
 Some Hexo commands:
 ```bash
 $ hexo new post "<post name>"  # New a post,also you can change post to another one layout if you want
@@ -60,22 +68,29 @@ $ hexo deploy # Hexo will push the static files(in the `public` path) into speci
 $ hexo server # Run hexo in local environment,default 4000 port
 ```
 
-##Travis(auto publish your repo)
-###The Whole Following Process:
+## Travis(auto publish your repo)
+---
+### Following Process:
+---
 * git push your resource code(awayls on master branch)
 * Github message Travis something had changed
 * Travis start a task to build what you had writed in the `.travis.yml`
 
-###Install
+### Travis Install
+---
 Before installing Travis,you should install [Ruby](https://www.ruby-lang.org).And then
 ```bash
 #install Travis CI
 $ gem install travis
 ```
-###Setting
+### Setting
+---
 You need just register the [Travis CI](https://travis-ci.org/),and relate to the your Github repo.
 
-###Git Personal Access Token
+### Git Personal Access Token
+---
+At Travis,we need use github token to operate push/pull.And we don't want to expose our personal access token, so we should encrypt it by Travis.<br>
+![travis-encrypt-keys](travis-encrypt-keys.png)<br>
 Create your Personal Access Token in your github profile page and encrypt it with Travis CI. 
 ```bash
 # encrypt the Personal Access Token
@@ -83,7 +98,8 @@ $ travis encrypt -r <your github name>/<your github repo> GH_TOKEN=<Personal Acc
 ```
 <font color="#A9A9A9">Tip:If your repo is public,you should add `--org` at the end.</font>
 
-###Modify `.travis.yml`
+### Modify `.travis.yml`
+---
 * add environment vaviables
 ```yml
 # the "xxx" is the cryptograph of your github personal access token
