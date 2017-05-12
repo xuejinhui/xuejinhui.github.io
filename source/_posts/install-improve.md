@@ -1,14 +1,13 @@
 ---
-title: Hexo And Travis Install 
+title: "Hexo And Travis Install" 
 catalog: true
 date: 2017-05-09 10:23:13
-subtitle:Install hexo and auto publish with Travis
-header-img:
+subtitle: "Install hexo and auto publish with Travis"
+header-img: 
 tags:
 - Hexo
 - Travis
 - Blog
-
 catagories:
 - Hexo
 ---
