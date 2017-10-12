@@ -19,6 +19,9 @@ before_script:
 
 script:
   - hexo clean & hexo generate
+# install plugin hexo-renderer-markdown-it
+  - npm un hexo-renderer-marked --save
+  - npm i hexo-renderer-markdown-it --save
 
 after_script:
   - cd public
