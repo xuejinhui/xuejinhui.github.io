@@ -1,12 +1,12 @@
 ---
-title: "Docker Install and Desc" 
+title: "Docker安装及常用命令" 
 catalog: true
 date: 2017-05-25 20:23:13
-subtitle: "Docker Install and Desc"
+subtitle: "Docker利用yum源安装以及常用命令"
 header-img: "docker-install-header.png"
 tags:
 - Docker
-- Docker-Install
+- Docker-yum-Install
 - Blog
 catagories:
 - Docker
@@ -15,19 +15,19 @@ catagories:
 # Docker的安装以及常用命令
 ---
   本篇文章将简单介绍docker、如何安装以及常用的docker命令。
-##1、Docker的安装
+## 1、Docker的安装
 ---
-###Linux环境(centos)
+### Linux环境(centos)
 ---
-####&ensp;&ensp;系统要求
+#### &ensp;&ensp;系统要求
 ---
-```
+```bash
     1、64位版本CentOS 7,并且要求内核版本不低于3.10
     2、卸载旧版本：sudo yum remove docker
 ```
-####&ensp;&ensp;使用yum源安装
+#### &ensp;&ensp;使用yum源安装
 ---
-```
+```bash
     ##先安装依赖包
     $ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
     
@@ -38,19 +38,19 @@ catagories:
     $ sudo yum makecache fast
     $ sudo yum install docker-ce
 ```
-####&ensp;&ensp;启动Docker CE
+#### &ensp;&ensp;启动Docker CE
 ---
-```
+```bash
     $ sudo systemctl enable docker
     $ sudo systemctl start docker
 ```
-##2、Docker常用命令
+## 2、Docker常用命令
 ---
-###基础类
+### 基础类
 ---
-####查看docker信息
+#### 查看docker信息
 ---
-```
+```bash
     ##查看docker版本
     $ sudo docker version
     
@@ -66,11 +66,11 @@ catagories:
     ##启动/关闭docker
     $ sudo service docker start/stop
 ```
-###容器类
+### 容器类
 ---
-####查看容器信息
+#### 查看容器信息
 ---
-```
+```bash
     ##查看当前运行的容器
     $ sudo docker ps
     
@@ -83,9 +83,9 @@ catagories:
     ##查看容器或镜像的参数，默认返回的json格式
     $ sudo docker inspect [CONTAINER]
 ```
-####容器同步命令
+#### 容器同步命令
 ---
-```
+```bash
     ##保存对容器的修改
     $ sudo docker commit
     
@@ -95,9 +95,9 @@ catagories:
     ##进入到一个正运行的容器
     $ sudo docker attach [CONTAINER]
 ```
-####容器操作命令
+#### 容器操作命令
 ---
-```
+```bash
     ##创建一个容器 -i:保持标准输入 -t:terminal -d:后台运行
     $ sudo docker create -i -t -d --name CONTAINER_NAME IMAGE_NAME
     
@@ -145,11 +145,11 @@ catagories:
     $ sudo docker export [CONTAINER_ID] > [/path/filename]
 ```
   
-###镜像类
+### 镜像类
 ---
-####远程镜像
+#### 远程镜像
 ---
-```
+```bash
     ##登录docker
     $ sudo docker login
     
@@ -162,9 +162,9 @@ catagories:
     ##将镜像推送至远程仓库,默认是Docker Hub
     $ sudo docker push 
 ```
-####本地镜像
+#### 本地镜像
 ---
-```
+```bash
     ##列出所有镜像
     $ sudo docker images
     
