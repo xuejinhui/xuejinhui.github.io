@@ -11,16 +11,20 @@ tags:
 catagories:
 - Hexo
 ---
+
 # Install hexo and auto publish with travis
 ---
 This page will tell you how to install Hexo and auto publish your blog with travis that is a publish tool.So you can publish your blog only git push your hexo program.
+
 ## Hexo Installation
 ---
+
 ### Requirements
 ---
 Before installing Hexo,you do need to intall a couple of other things:
 * [Node.js](https://nodejs.org)
 * [Git](https://git-scm.com/)
+
 ### Install
 ---
 ```bash
@@ -28,8 +32,10 @@ $ npm install -g hexo-cli
 ```
 And now you have finished the installation of Hexo.<br>
 <font color="#A9A9A9">Tip:Remmenber put all bin path above into environment variables on your opreration system.</font>
+
 ## Hexo Init
 ---
+
 ### Init
 ---
 Once Hexo is intalled,run the following commands to init Hexo.
@@ -38,6 +44,7 @@ $ hexo init <folder>
 $ cd <folder>
 $ npm install
 ```
+
 ### Modify
 ---
 Modify `_config.yml` file with your own info.<br>
@@ -70,6 +77,7 @@ $ hexo server # Run hexo in local environment,default 4000 port
 
 ## Travis(auto publish your repo)
 ---
+
 ### Following Process:
 ---
 * git push your resource code(awayls on master branch)
@@ -83,6 +91,7 @@ Before installing Travis,you should install [Ruby](https://www.ruby-lang.org).An
 #install Travis CI
 $ gem install travis
 ```
+
 ### Setting
 ---
 You need just register the [Travis CI](https://travis-ci.org/),and relate to the your Github repo.

@@ -15,16 +15,20 @@ catagories:
 # Docker的安装以及常用命令
 ---
   本篇文章将简单介绍docker、如何安装以及常用的docker命令。
+
 ## 1、Docker的安装
 ---
+
 ### Linux环境(centos)
 ---
+
 #### &ensp;&ensp;系统要求
 ---
 ```bash
     1、64位版本CentOS 7,并且要求内核版本不低于3.10
     2、卸载旧版本：sudo yum remove docker
 ```
+
 #### &ensp;&ensp;使用yum源安装
 ---
 ```bash
@@ -38,16 +42,20 @@ catagories:
     $ sudo yum makecache fast
     $ sudo yum install docker-ce
 ```
+
 #### &ensp;&ensp;启动Docker CE
 ---
 ```bash
     $ sudo systemctl enable docker
     $ sudo systemctl start docker
 ```
+
 ## 2、Docker常用命令
 ---
+
 ### 基础类
 ---
+
 #### 查看docker信息
 ---
 ```bash
@@ -66,8 +74,10 @@ catagories:
     ##启动/关闭docker
     $ sudo service docker start/stop
 ```
+
 ### 容器类
 ---
+
 #### 查看容器信息
 ---
 ```bash
@@ -83,6 +93,7 @@ catagories:
     ##查看容器或镜像的参数，默认返回的json格式
     $ sudo docker inspect [CONTAINER]
 ```
+
 #### 容器同步命令
 ---
 ```bash
@@ -95,6 +106,7 @@ catagories:
     ##进入到一个正运行的容器
     $ sudo docker attach [CONTAINER]
 ```
+
 #### 容器操作命令
 ---
 ```bash
@@ -147,6 +159,7 @@ catagories:
   
 ### 镜像类
 ---
+
 #### 远程镜像
 ---
 ```bash
@@ -162,6 +175,7 @@ catagories:
     ##将镜像推送至远程仓库,默认是Docker Hub
     $ sudo docker push 
 ```
+
 #### 本地镜像
 ---
 ```bash
