@@ -16,12 +16,12 @@ install:
 
 before_script:
   - npm install -g hexo-cli
-
-script:
-  - hexo clean & hexo generate
 # install plugin hexo-renderer-markdown-it
   - npm un hexo-renderer-marked --save
   - npm i hexo-renderer-markdown-it --save
+
+script:
+  - hexo clean & hexo generate
 
 after_script:
   - cd public
