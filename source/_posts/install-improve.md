@@ -14,19 +14,17 @@ catagories:
 
 # Install hexo and auto publish with travis
 ---
-This page will tell you how to install Hexo and auto publish your blog with travis that is a publish tool.So you can publish your blog only git push your hexo program.
+This page will tell you how to install Hexo and auto publish your blog with travis that is a publish tool. So you can publish your blog only git push your hexo program.
 
 ## Hexo Installation
 ---
 
 ### Requirements
----
 Before installing Hexo,you do need to intall a couple of other things:
 * [Node.js](https://nodejs.org)
 * [Git](https://git-scm.com/)
 
 ### Install
----
 ```bash
 $ npm install -g hexo-cli
 ```
@@ -37,7 +35,6 @@ And now you have finished the installation of Hexo.<br>
 ---
 
 ### Init
----
 Once Hexo is intalled,run the following commands to init Hexo.
 ```bash
 $ hexo init <folder>
@@ -46,7 +43,6 @@ $ npm install
 ```
 
 ### Modify
----
 Modify `_config.yml` file with your own info.<br>
 * Site
 ```yml
@@ -79,13 +75,11 @@ $ hexo server # Run hexo in local environment,default 4000 port
 ---
 
 ### Following Process:
----
 * git push your resource code(awayls on master branch)
 * Github message Travis something had changed
 * Travis start a task to build what you had writed in the `.travis.yml`
 
 ### Travis Install
----
 Before installing Travis,you should install [Ruby](https://www.ruby-lang.org).And then
 ```bash
 #install Travis CI
@@ -93,11 +87,9 @@ $ gem install travis
 ```
 
 ### Setting
----
 You need just register the [Travis CI](https://travis-ci.org/),and relate to the your Github repo.
 
 ### Git Personal Access Token
----
 At Travis,we need use github token to operate push/pull.And we don't want to expose our personal access token, so we should encrypt it by Travis.<br>
 ![travis-encrypt-keys](travis-encrypt-keys.png)<br>
 Create your Personal Access Token in your github profile page and encrypt it with Travis CI. 
@@ -108,7 +100,6 @@ $ travis encrypt -r <your github name>/<your github repo> GH_TOKEN=<Personal Acc
 <font color="#A9A9A9">Tip:If your repo is public,you should add `--org` at the end.</font>
 
 ### Modify `.travis.yml`
----
 * add environment vaviables
 ```yml
 # the "xxx" is the cryptograph of your github personal access token

@@ -67,8 +67,8 @@ widgets:
 - short-about
 - recent-posts
 - friends-blog
-- archive
-- category
+#- archive
+#- category
 
 # widget behavior
 ## Archive
