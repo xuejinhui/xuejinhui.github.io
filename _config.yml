@@ -168,8 +168,6 @@ markdown:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: beantech
-plugins:
-  - markdown-it-named-headings
 
 
 #sitemap
