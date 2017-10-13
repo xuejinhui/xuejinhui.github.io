@@ -19,6 +19,7 @@ before_script:
 # install plugin hexo-renderer-markdown-it
   - npm un hexo-renderer-marked --save
   - npm i hexo-renderer-markdown-it --save
+  - npm install markdown-it-named-headings --save
 
 script:
   - hexo clean & hexo generate
