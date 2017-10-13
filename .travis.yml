@@ -17,10 +17,10 @@ install:
 before_script:
   - npm install -g hexo-cli
 # install plugin hexo-renderer-markdown-it
-#  - npm un hexo-renderer-marked --save
+  - npm un hexo-renderer-marked --save
   - npm i hexo-renderer-markdown-it --save
   - npm install markdown-it-named-headings --save
-  - sed -i '11i\  parser.use(require('markdown-it-named-headings')) ' node_modules/hexo-renderer-markdown-it/lib/renderer.js
+  - sed -i "11i\  parser.use(require('markdown-it-named-headings')) " node_modules/hexo-renderer-markdown-it/lib/renderer.js
   - cat node_modules/hexo-renderer-markdown-it/lib/renderer.js
 
 script:
