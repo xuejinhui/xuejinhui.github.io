@@ -1,5 +1,5 @@
 ---
-title: "[Docker]Docker安装及常用命令" 
+title: "[Docker] Docker安装及常用命令" 
 catalog: true
 date: 2017-05-25 20:23:13
 subtitle: "Docker利用yum源安装以及常用命令"
