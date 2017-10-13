@@ -19,12 +19,12 @@ This page will tell you how to install Hexo and auto publish your blog with trav
 ## Hexo Installation
 ---
 
-### Requirements
+### Requirements 
 Before installing Hexo,you do need to intall a couple of other things:
 * [Node.js](https://nodejs.org)
 * [Git](https://git-scm.com/)
 
-### Install
+### Install hexo
 ```bash
 $ npm install -g hexo-cli
 ```
