@@ -13,12 +13,12 @@ cache:
 # S: Build Lifecycle
 install:
   - npm install
-# install plugin hexo-renderer-markdown-it
-#  - npm un hexo-renderer-marked --save
-#  - npm i hexo-renderer-markdown-it --save
 
 before_script:
   - npm install -g hexo-cli
+# install plugin hexo-renderer-markdown-it
+  - npm un hexo-renderer-marked --save
+  - npm i hexo-renderer-markdown-it --save
 
 script:
   - hexo clean & hexo generate
